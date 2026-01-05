@@ -10,10 +10,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
-    <body>
-        <h1>Hello World!</h1>
-        <br>
-        <b>Huynh Ngoc Truong</b>
+    <body class="bg-primary">
+
+        <div class="container mt-5">
+            <div class="card shadow text-center" style="width:400px;"> 
+                <div class="card-body">
+                    <h1>Hello World!</h1>
+                    <br>
+                    <h2>Huynh Ngoc Truong</h2> 
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
