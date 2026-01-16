@@ -1,0 +1,29 @@
+<%-- 
+    Document   : login
+    Created on : Jan 12, 2026, 3:35:08 PM
+    Author     : truon
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <form action="MainController" method="post">
+            <input type="hidden" name="action" value="login">
+            Username : <input type="text" name="txtUse"></br>
+            Password : <input type="text" name="txtPass"></br>
+            <input type="submit" value="Login">
+        </form>
+        
+         <%
+            String message = request.getAttribute("message")+"";
+            message = (message.equals("null"))?"":message;
+        %>
+        <span style="color:red"><%=message%></span>
+        
+    </body>
+</html>
